@@ -1,15 +1,19 @@
 import { Outlet } from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
 
 export default function Layout() {
   return (
     <>
       <header>
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
+        <Header />
       </header>
       <main>
         <Outlet />
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

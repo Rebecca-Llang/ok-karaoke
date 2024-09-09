@@ -1,3 +1,13 @@
 import { createRoutesFromElements, Route } from 'react-router-dom'
-import App from './components/App.tsx'
-export default createRoutesFromElements(<Route index element={<App />} />)
+
+import Steps from './components/Steps'
+import App from './components/App'
+import AddNewSong from './components/AddNewSong'
+
+export default createRoutesFromElements(
+  <Route path="/" element={<App />}>
+    <Route index element={<Steps />} />
+    <Route path="/home" element={<Steps />} />
+    <Route path="/addnewsong" element={<AddNewSong />} />
+  </Route>,
+)
