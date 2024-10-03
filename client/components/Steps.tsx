@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Steps() {
   return (
-    <div className="container">
+    <div className="stepsContainer">
       <div className="grid  grid-rows-4 justify-center">
         <h2>Step By Step:</h2>
         <div className="paragraph">

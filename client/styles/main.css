@@ -33,6 +33,10 @@ h2 {
 /* .navLink {
 } */
 
+.stepsContainer {
+  display: block;
+}
+
 .footer {
   background-color: #351a47;
   position: absolute;

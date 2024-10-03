@@ -1,21 +1,32 @@
-# Boilerplate: Fullstack with Sass
+# OK Karaoke 🎤
 
-## Setup
+OK Karaoke is a full-stack web app that allows users to create, manage and sing along to their own karaoke playlists.
+This app includes user authentication, an easy to use form for adding songs including the karaoke singer's name, and playlist management features. Users can filter songs by genre, decade or the karaoke singer's name for karaoke parties. Let the fun begin!
 
-### What's included
+This project is in its early stages, with the MVP focused on essential playlist functionality and authentication, and stretch goals of integrating music and video via external APIs.
 
-This repo includes:
+## MVP Features ✨
 
-* a single, simple API endpoint (`/api/v1/fruits`)
-* frontend routing via react-router
-* an auth0 setup waiting to be configured
-* an example database module (`server/db/fruits.js`)
-* an API client module (`client/apis/fruits.js`)
-* configuration for Vitest and testing library
-* configuration for server-side debugging in VS Code
-* configuration for preprocessing css with tailwind support
+- Auth0 Login: Users can sign in securely with Auth0.
+- Add Songs: A form allows users to add songs to the playlist, including details like the karaoke singer's name.
+- View My Playlist: Users can see a list of all the songs they’ve added.
+- Filter Playlist: Easily filter songs by genre, decade, or their own name.
+- Update and Delete: Manage songs in your playlist by adding the names of new karaoke singers or deleting the songs from your playlist.
 
-### Installation
+## Stretch Features 🚀
+- MusixMatch API Integration: Use the MusixMatch API to autofill song details when adding new songs and provide lyrics.
+- Lyrics Display: Provide song lyrics on the "Sing" page.
+- YouTube Video Display: Show a YouTube video of the karaoke song alongside the lyrics.
+
+## Tech Stack 🖥️
+- Frontend: React, Tailwind CSS for styling, React Router for navigation
+- Backend: Node.js, Express for server-side logic
+- Authentication: Auth0 for secure user login
+- Database: SQLite3 via Knex for managing song data
+- External APIs: MusixMatch API for song information and lyrics, YouTube API for videos (future implementation)
+- Testing: Vitest and Testing Library for unit and integration tests
+
+## Installation ✅
 
 #### **From the Github UI**
 
@@ -24,13 +35,12 @@ See the instructions [here](https://docs.github.com/en/free-pro-team@latest/gith
 #### **From the command line**
 
 ```
-git clone https://github.com/dev-academy-challenges/boilerplate-fullstack [your-project-name]
-cd [your-project-name]
+git clone https://github.com/[your-username]/ok-karaoke
+cd ok-karaoke
 npm install # to install dependencies
 npm run dev # to start the dev server
 ```
 
 You can find the server running on [http://localhost:3000](http://localhost:3000) and the client running on [http://localhost:5173](http://localhost:5173).
 
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-fullstack)
+
